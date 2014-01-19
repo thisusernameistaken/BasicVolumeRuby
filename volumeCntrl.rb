@@ -6,8 +6,8 @@ class VolCntrl < Gtk::Window
 		super
 		
 		signal_connect "destroy" do 
-            Gtk.main_quit 
-        end
+        		 Gtk.main_quit 
+        	end
 		
 		fixed = Gtk::Fixed.new
 		add fixed
@@ -18,8 +18,8 @@ class VolCntrl < Gtk::Window
 		currentVol = vols[4]
 		currentVol= currentVol[1,currentVol.length-3].to_i
 		puts currentVol
-		
-		
+	
+	
 		slider = Gtk::HScale.new 0, 100, 1
 		slider.set_size_request 200, 50
 		slider.value = currentVol
