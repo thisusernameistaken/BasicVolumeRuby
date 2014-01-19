@@ -29,7 +29,7 @@ class VolCntrl < Gtk::Window
 		end
 		
 		button = Gtk::Button.new "Mute/UnMute"
-		button.set_size_request 80, 40
+		button.set_size_request 130, 40
 		button.signal_connect "clicked" do
 			cmdMute = "amixer set Master toggle"
 			cmdMute = `#{cmdMute}`
@@ -49,7 +49,7 @@ class VolCntrl < Gtk::Window
 		fixed.put button, 220, 10
 		set_title "Volume Control"
 		
-		set_default_size 300, 50
+		set_default_size 340, 50
 		
 		
 		
