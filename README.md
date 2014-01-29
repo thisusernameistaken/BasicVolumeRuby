@@ -1,4 +1,4 @@
 BasicVolumeRuby
 ===============
 
-some small ruby programs to enhance my obenbox experiance by adding some volume control
+some small ruby programs to enhance my obenbox experience by adding some volume control
